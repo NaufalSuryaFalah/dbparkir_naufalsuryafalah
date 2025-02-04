@@ -1,0 +1,30 @@
+CREATE DATABASE dbparkir_naufal_surya_falah;
+CREATE TABLE parkir(
+	db_parkir INT(20) PRIMARY KEY,
+	Nama VARCHAR(20),
+	Alamat VARCHAR(20),
+	Varian VARCHAR(20),
+	Harga INT(15)
+)
+
+CREATE TABLE kendaraan(
+	db_kendaraan INT(20) PRIMARY KEY
+	db_parkir INT(20),
+	jenis_kendaraan VARCHAR(20)
+)
+
+INSERT INTO parkir VALUES
+(001,"Motor","Bandung","Honda",10000),
+(002,"Mobil","Jakarta","Toyota",20000),
+(003,"Motor","Bandung","Yamaha",10000),
+(004,"Mobil","Jakarta","BMW",25000),
+(005,"Motor","Bandung","Toyota",10000)
+
+INSERT INTO parkir VALUES
+(100,001,"Motor"),
+(101,002,"Mobil"),
+(102,003,"Motor"),
+(103,004,"Mobil"),
+(104,005,"Motor")
+
+
